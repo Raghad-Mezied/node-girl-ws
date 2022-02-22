@@ -1,5 +1,7 @@
 const http = require("http");
+require('env2')('.env')
 const router = require("./router.js");
+
 
 const server = http.createServer(router);
 
